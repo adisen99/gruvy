@@ -56,7 +56,7 @@ local theme = lush(function()
     TSTitle                                { Title }, -- TSTitle        xxx links to Title
     htmlTitle                              { Title }, -- htmlTitle      xxx links to Title
     Visual                                 { bg="#38556d", fg="none", sp="none", }, -- Visual         xxx ctermbg=242 guifg=none guibg=#38556d guisp=none
-    TSPlaygroundFocus                      { Visual }, -- TSPlaygroundFocus xxx links to Visual
+    -- TSPlaygroundFocus                      { Visual }, -- TSPlaygroundFocus xxx links to Visual
     TelescopeSelection                     { Visual }, -- TelescopeSelection xxx links to Visual
     TelescopePreviewLine                   { Visual }, -- TelescopePreviewLine xxx links to Visual
     WarningMsg                             { fg="red", }, -- WarningMsg     xxx ctermfg=224 guifg=red
@@ -118,7 +118,7 @@ local theme = lush(function()
     FloatShadowThrough                     { bg="black", blend="100", }, -- FloatShadowThrough xxx guibg=black blend=100
     Error                                  { bg="none", fg="#d98c8c", gui="bold", sp="none", }, -- Error          xxx ctermfg=15 ctermbg=9 gui=bold guifg=#d98c8c guibg=none guisp=none
     NvimInvalid                            { Error }, -- NvimInvalid    xxx links to Error
-    TSQueryLinterError                     { Error }, -- TSQueryLinterError xxx links to Error
+    -- TSQueryLinterError                     { Error }, -- TSQueryLinterError xxx links to Error
     htmlPreProcAttrError                   { Error }, -- htmlPreProcAttrError xxx links to Error
     vbError                                { Error }, -- vbError        xxx links to Error
     cssDeprecated                          { Error }, -- cssDeprecated  xxx links to Error
@@ -147,9 +147,9 @@ local theme = lush(function()
     String                                 { bg="none", fg="#99cc99", sp="none", }, -- String         xxx guifg=#99cc99 guibg=none guisp=none
     NvimString                             { String }, -- NvimString     xxx links to String
     TSString                               { String }, -- TSString       xxx links to String
-    TSStringRegex                          { String }, -- TSStringRegex  xxx links to String
-    TSLiteral                              { String }, -- TSLiteral      xxx links to String
-    TSPlaygroundLang                       { String }, -- TSPlaygroundLang xxx links to String
+    -- TSStringRegex                          { String }, -- TSStringRegex  xxx links to String
+    -- TSLiteral                              { String }, -- TSLiteral      xxx links to String
+    -- TSPlaygroundLang                       { String }, -- TSPlaygroundLang xxx links to String
     TelescopePreviewExecute                { String }, -- TelescopePreviewExecute xxx links to String
     TelescopePreviewSize                   { String }, -- TelescopePreviewSize xxx links to String
     javaScriptStringD                      { String }, -- javaScriptStringD xxx links to String
@@ -170,7 +170,7 @@ local theme = lush(function()
     htmlString                             { String }, -- htmlString     xxx links to String
     packerString                           { String }, -- packerString   xxx links to String
     Constant                               { bg="none", fg="#de935f", gui="bold", sp="none", }, -- Constant       xxx ctermfg=13 gui=bold guifg=#de935f guibg=none guisp=none
-    TSTextReference                        { Constant }, -- TSTextReference xxx links to Constant
+    -- TSTextReference                        { Constant }, -- TSTextReference xxx links to Constant
     TelescopePreviewPipe                   { Constant }, -- TelescopePreviewPipe xxx links to Constant
     TelescopePreviewCharDev                { Constant }, -- TelescopePreviewCharDev xxx links to Constant
     TelescopePreviewBlock                  { Constant }, -- TelescopePreviewBlock xxx links to Constant
@@ -306,13 +306,13 @@ local theme = lush(function()
     javaScriptMember                       { Keyword }, -- javaScriptMember xxx links to Keyword
     javaScriptReserved                     { Keyword }, -- javaScriptReserved xxx links to Keyword
     Include                                { bg="none", fg="#8abeb7", sp="none", }, -- Include        xxx guifg=#8abeb7 guibg=none guisp=none
-    TSNamespace                            { Include }, -- TSNamespace    xxx links to Include
+    -- TSNamespace                            { Include }, -- TSNamespace    xxx links to Include
     cssAtRule                              { Include }, -- cssAtRule      xxx links to Include
     PreProc                                { bg="none", fg="#f8fe7a", sp="none", }, -- PreProc        xxx ctermfg=81 guifg=#f8fe7a guibg=none guisp=none
     Macro                                  { PreProc }, -- Macro          xxx links to PreProc
     PreCondit                              { PreProc }, -- PreCondit      xxx links to PreProc
-    TSAnnotation                           { PreProc }, -- TSAnnotation   xxx links to PreProc
-    TSAttribute                            { PreProc }, -- TSAttribute    xxx links to PreProc
+    -- TSAnnotation                           { PreProc }, -- TSAnnotation   xxx links to PreProc
+    -- TSAttribute                            { PreProc }, -- TSAttribute    xxx links to PreProc
     htmlPreStmt                            { PreProc }, -- htmlPreStmt    xxx links to PreProc
     htmlPreProc                            { PreProc }, -- htmlPreProc    xxx links to PreProc
     htmlPreProcAttrName                    { PreProc }, -- htmlPreProcAttrName xxx links to PreProc
@@ -328,15 +328,15 @@ local theme = lush(function()
     vimHiAttrib                            { PreProc }, -- vimHiAttrib    xxx links to PreProc
     vimHLMod                               { PreProc }, -- vimHLMod       xxx links to PreProc
     Define                                 { bg="none", fg="#8abeb7", sp="none", }, -- Define         xxx guifg=#8abeb7 guibg=none guisp=none
-    TSConstMacro                           { Define }, -- TSConstMacro   xxx links to Define
+    -- TSConstMacro                           { Define }, -- TSConstMacro   xxx links to Define
     StorageClass                           { bg="none", fg="#f8fe7a", sp="none", }, -- StorageClass   xxx guifg=#f8fe7a guibg=none guisp=none
     cssProp                                { StorageClass }, -- cssProp        xxx links to StorageClass
     Type                                   { bg="none", fg="#b294bb", gui="italic", sp="none", }, -- Type           xxx ctermfg=121 gui=italic guifg=#b294bb guibg=none guisp=none
     NvimNumberPrefix                       { Type }, -- NvimNumberPrefix xxx links to Type
     NvimOptionSigil                        { Type }, -- NvimOptionSigil xxx links to Type
     TSType                                 { Type }, -- TSType         xxx links to Type
-    TSTypeBuiltin                          { Type }, -- TSTypeBuiltin  xxx links to Type
-    TSEnvironmentName                      { Type }, -- TSEnvironmentName xxx links to Type
+    -- TSTypeBuiltin                          { Type }, -- TSTypeBuiltin  xxx links to Type
+    -- TSEnvironmentName                      { Type }, -- TSEnvironmentName xxx links to Type
     TelescopeMultiSelection                { Type }, -- TelescopeMultiSelection xxx links to Type
     vimAutoEvent                           { Type }, -- vimAutoEvent   xxx links to Type
     htmlArg                                { Type }, -- htmlArg        xxx links to Type
@@ -367,10 +367,10 @@ local theme = lush(function()
     Delimiter                              { Special }, -- Delimiter      xxx links to Special
     SpecialComment                         { Special }, -- SpecialComment xxx links to Special
     Debug                                  { Special }, -- Debug          xxx links to Special
-    TSConstBuiltin                         { Special }, -- TSConstBuiltin xxx links to Special
-    TSFuncBuiltin                          { Special }, -- TSFuncBuiltin  xxx links to Special
-    TSConstructor                          { Special }, -- TSConstructor  xxx links to Special
-    TSMath                                 { Special }, -- TSMath         xxx links to Special
+    -- TSConstBuiltin                         { Special }, -- TSConstBuiltin xxx links to Special
+    -- TSFuncBuiltin                          { Special }, -- TSFuncBuiltin  xxx links to Special
+    -- TSConstructor                          { Special }, -- TSConstructor  xxx links to Special
+    -- TSMath                                 { Special }, -- TSMath         xxx links to Special
     TelescopePreviewLink                   { Special }, -- TelescopePreviewLink xxx links to Special
     vimAutoCmdMod                          { Special }, -- vimAutoCmdMod  xxx links to Special
     vimLetHereDocStart                     { Special }, -- vimLetHereDocStart xxx links to Special
@@ -400,8 +400,8 @@ local theme = lush(function()
     SpecialChar                            { bg="none", fg="#a3685a", sp="none", }, -- SpecialChar    xxx guifg=#a3685a guibg=none guisp=none
     NvimRegister                           { SpecialChar }, -- NvimRegister   xxx links to SpecialChar
     NvimStringSpecial                      { SpecialChar }, -- NvimStringSpecial xxx links to SpecialChar
-    TSStringEscape                         { SpecialChar }, -- TSStringEscape xxx links to SpecialChar
-    TSStringSpecial                        { SpecialChar }, -- TSStringSpecial xxx links to SpecialChar
+    -- TSStringEscape                         { SpecialChar }, -- TSStringEscape xxx links to SpecialChar
+    -- TSStringSpecial                        { SpecialChar }, -- TSStringSpecial xxx links to SpecialChar
     TelescopeResultsVariable               { SpecialChar }, -- TelescopeResultsVariable xxx links to SpecialChar
     vimRegister                            { SpecialChar }, -- vimRegister    xxx links to SpecialChar
     vimCmplxRepeat                         { SpecialChar }, -- vimCmplxRepeat xxx links to SpecialChar
@@ -451,7 +451,7 @@ local theme = lush(function()
     packerPackageNotLoaded                 { Comment }, -- packerPackageNotLoaded xxx links to Comment
     NotifyLogTime                          { Comment }, -- NotifyLogTime  xxx links to Comment
     Underlined                             { fg="#80a0ff", gui="underline", }, -- Underlined     xxx cterm=underline ctermfg=81 gui=underline guifg=#80a0ff
-    TSURI                                  { Underlined }, -- TSURI          xxx links to Underlined
+    -- TSURI                                  { Underlined }, -- TSURI          xxx links to Underlined
     htmlLink                               { Underlined }, -- htmlLink       xxx links to Underlined
     Ignore                                 { fg="bg", }, -- Ignore         xxx ctermfg=0 guifg=bg
     NvimInternalError                      { bg="red", fg="red", }, -- NvimInternalError xxx ctermfg=9 ctermbg=9 guifg=red guibg=red
@@ -492,13 +492,13 @@ local theme = lush(function()
     TSFunction                             { bg="none", fg="#f8fe7a", sp="none", }, -- TSFunction     xxx guifg=#f8fe7a guibg=none guisp=none
     luaTSFunction                          { TSFunction }, -- luaTSFunction  xxx links to TSFunction
     vimTSFunction                          { TSFunction }, -- vimTSFunction  xxx links to TSFunction
-    TSInclude                              { bg="none", fg="#8abeb7", sp="none", }, -- TSInclude      xxx guifg=#8abeb7 guibg=none guisp=none
-    TSVariableBuiltin                      { bg="none", fg="#f8fe7a", sp="none", }, -- TSVariableBuiltin xxx guifg=#f8fe7a guibg=none guisp=none
-    vimTSVariableBuiltin                   { TSVariableBuiltin }, -- vimTSVariableBuiltin xxx links to TSVariableBuiltin
-    TSStrong                               { gui="bold", }, -- TSStrong       xxx gui=bold
-    TSEmphasis                             { gui="italic", }, -- TSEmphasis     xxx gui=italic
-    TSUnderline                            { gui="underline", }, -- TSUnderline    xxx gui=underline
-    TSStrike                               { gui="strikethrough", }, -- TSStrike       xxx gui=strikethrough
+    -- TSInclude                              { bg="none", fg="#8abeb7", sp="none", }, -- TSInclude      xxx guifg=#8abeb7 guibg=none guisp=none
+    -- TSVariableBuiltin                      { bg="none", fg="#f8fe7a", sp="none", }, -- TSVariableBuiltin xxx guifg=#f8fe7a guibg=none guisp=none
+    -- vimTSVariableBuiltin                   { TSVariableBuiltin }, -- vimTSVariableBuiltin xxx links to TSVariableBuiltin
+    -- TSStrong                               { gui="bold", }, -- TSStrong       xxx gui=bold
+    -- TSEmphasis                             { gui="italic", }, -- TSEmphasis     xxx gui=italic
+    -- TSUnderline                            { gui="underline", }, -- TSUnderline    xxx gui=underline
+    -- TSStrike                               { gui="strikethrough", }, -- TSStrike       xxx gui=strikethrough
     OverLength                             { bg="#8b0000", }, -- OverLength     xxx ctermbg=242 guibg=#8b0000
     TelescopeMatching                      { bg="none", fg="#f2904b", gui="bold", sp="none", }, -- TelescopeMatching xxx gui=bold guifg=#f2904b guibg=none guisp=none
     user1                                  { bg="#f8fe7a", fg="#ffffff", gui="bold", sp="none", }, -- user1          xxx gui=bold guifg=#ffffff guibg=#f8fe7a guisp=none
